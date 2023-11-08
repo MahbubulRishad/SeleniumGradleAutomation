@@ -23,7 +23,7 @@ public class SeleniumLocator {
         driver.findElement(By.name("password")).sendKeys("secret_sauce");
 
 //        xpath
-        driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
 
 //        ClassName
         List<WebElement> webElements = driver.findElements(By.className("inventory_item_name"));
@@ -36,8 +36,8 @@ public class SeleniumLocator {
         System.out.println(linkText);
 
 //        PartialLinkText
-//        String partialLinkText = driver.findElement(By.linkText("Fleece")).getText();
-//        System.out.println(partialLinkText);
+        String partialLinkText = driver.findElement(By.linkText("Fleece")).getText();
+        System.out.println(partialLinkText);
 
 //        TagName
         List<WebElement> aTag = driver.findElements(By.tagName("a"));
@@ -46,7 +46,7 @@ public class SeleniumLocator {
         }
 
 //        CssSelector
-        driver.findElement(By.cssSelector("[data-test=\"add-to-cart-sauce-labs-backpack\" ]"))
+        driver.findElement(By.cssSelector("[data-test='add-to-cart-sauce-labs-backpack' ]"))
                 .click();
 
 
