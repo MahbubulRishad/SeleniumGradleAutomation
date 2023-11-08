@@ -36,7 +36,7 @@ public class SeleniumLocator {
         System.out.println(linkText);
 
 //        PartialLinkText
-        String partialLinkText = driver.findElement(By.linkText("Fleece")).getText();
+        String partialLinkText = driver.findElement(By.partialLinkText("Fleece")).getText();
         System.out.println(partialLinkText);
 
 //        TagName
